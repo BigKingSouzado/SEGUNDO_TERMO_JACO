@@ -1,0 +1,1 @@
+-- Active: 1788351678322@@127.0.0.1@3306@smartcoffee_dml_jaco_souza
