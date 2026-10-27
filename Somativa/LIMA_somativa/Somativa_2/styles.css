@@ -1,0 +1,74 @@
+/* INTRODUÇÃO */
+.cabesalho {
+    background-color: rgb(27, 153, 2);
+}
+
+.cabecalho_logo {
+    display: flex;  
+    gap: 23px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.nostalgia {
+    color: white;
+}
+
+.play {
+    color: crimson;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;  
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+}
+
+/* COMEÇO DA PÁGINA */
+.introducao {
+    background-color: goldenrod;
+}
+
+.anos {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: chartreuse;
+}
+
+.titulo_introducao {
+    color: white;
+}
+
+.texto_introducao {
+    color: white;
+}
+
+.aperta_play {
+    color: rgb(0, 252, 42);
+}
+
+/* MARCANTE */
+
+.marcante {
+    background-color: gold;
+}
+
+.base_imagem_marcante {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
