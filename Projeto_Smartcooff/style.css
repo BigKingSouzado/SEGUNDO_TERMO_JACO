@@ -1,0 +1,438 @@
+/* CONFIGURAÇÕES GERAIS */
+:root {
+    /* Paleta de cores */
+    --espresso: #2b170d;
+    --cafe: #5a321b;
+    --caramelo: #c66a1a;
+    --creme: #f3e6d7;
+    --marfim: #fff9f3;
+    --taupe: #9a887a;
+    --texto: #1e140f;
+    --branco: #ffffff;
+
+    /* Fontes ou tipografia */
+    --fonte-principal: Arial, sans-serif;
+    --fonte-secundaria: "Poppins" ,Helvetica;
+
+    /* Espaçamento */
+    --espaco-pequeno: 4px;
+    --espaco-sm: 8px;
+    --espaco-md: 16px;
+    --espaco-lg: 24px;
+    --espaco-xl: 48px;
+    --espaco-xxl: 80px
+    /* Obs: root é responsável por disponibilizar um espaço para 
+    cadastro de variaveis do elemento raiz do documento. 
+    Variáveis CSS globais. */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #21150f;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.texto-destaque,
+.destaque {
+    color: #c66a1a;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-color: #21150f;
+    color: #ffffff;
+    padding: 22px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.logo-icone {
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu a {
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #e58a3b;
+}
+
+.menu .link-cardapio {
+    background-color: #c66a1a;
+    padding: 7px 12px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+/* BANNER INICIAL */
+.banner {
+    background-color: #f3e5d5;
+    padding: 48px 4%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.banner-conteudo,
+.banner-imagem {
+    flex: 1;
+}
+
+.banner-conteudo h1 {
+    max-width: 550px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin: 4px 0 8px;
+}
+
+.subtitulo {
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.banner-imagem,
+.sobre-imagem,
+.ambiente-imagem {
+    margin: 0;
+}
+
+.banner-imagem img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #c66a1a;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 24px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.botao:hover,
+.botao-enviar:hover {
+    background-color: #a9510e;
+}
+
+/* SOBRE NÓS */
+.sobre {
+    background-color: #fffaf5;
+    padding: 32px 4%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre-imagem,
+.sobre-conteudo {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.sobre-conteudo h2,
+.contato h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.sobre-conteudo > p {
+    margin-bottom: 18px;
+}
+
+.botao-secundario {
+    display: inline-block;
+    border: 1px solid #c66a1a;
+    border-radius: 24px;
+    padding: 8px 22px;
+    transition: background-color 0.2s;
+}
+
+.botao-secundario:hover {
+    background-color: #f3e5d5;
+}
+
+/* PRODUTOS */
+.produtos {
+    background-color: #f3e5d5;
+    padding: 10px 4% 55px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.titulo-secao h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.lista-cafes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.card-cafe {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.card-cafe img {
+    height: 325px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 12px;
+}
+
+.card-conteudo h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.card-conteudo p {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-conteudo .preco {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* AMBIENTE */
+.ambiente {
+    background-color: #2b170e;
+    color: #ffffff;
+    padding: 18px 4%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.ambiente-conteudo,
+.ambiente-imagem {
+    flex: 1;
+}
+
+.ambiente-conteudo h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 350px;
+    margin-bottom: 12px;
+}
+
+.ambiente-conteudo > p:not(.texto-destaque) {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.ambiente-imagem img {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CONTATO */
+.contato {
+    background-color: #f3e5d5;
+    padding: 24px 4% 45px;
+    display: flex;
+    gap: 40px;
+}
+
+.contato-conteudo,
+.formulario {
+    flex: 1;
+}
+
+.contato-conteudo h2 {
+    margin-bottom: 8px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formulario label {
+    font-size: 14px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.botao-enviar {
+    background-color: #c66a1a;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #21150f;
+    color: #ffffff;
+    padding: 18px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu-rodape {
+    display: flex;
+    gap: 22px;
+}
+
+.menu-rodape a {
+    font-size: 13px;
+}
+
+.menu-rodape a:hover {
+    color: #e58a3b;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .cabecalho,
+    .rodape {
+        flex-direction: column;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .banner,
+    .sobre,
+    .ambiente,
+    .contato {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .banner-conteudo h1 {
+        font-size: 32px;
+    }
+
+    .subtitulo {
+        margin-bottom: 24px;
+    }
+
+    .lista-cafes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-rodape {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-cafes {
+        grid-template-columns: 1fr;
+    }
+
+    .banner,
+    .sobre,
+    .produtos,
+    .ambiente,
+    .contato {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .banner-conteudo h1 {
+        font-size: 28px;
+    }
+
+    .sobre-imagem img,
+    .banner-imagem img {
+        height: 200px;
+    }
+}
+
+/* TEXTO */
+h3 {
+    color: var(--caramelo);
+}
+
+h1 {
+    color: var(--texto);
+}

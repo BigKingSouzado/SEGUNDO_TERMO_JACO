@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCoffee | Café que conecta pessoas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a class="logo" href="#inicio" aria-label="SmartCoffee - Início">
+            <span class="logo-icone">☕</span>
+            <span>Smart<span class="destaque">Coffee</span></span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#ambiente">Ambiente</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a class="link-cardapio" href="#produtos">Cardápio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner" id="inicio">
+            <header class="banner-conteudo">
+                <p class="texto-destaque">Sabores que conectam</p>
+                <h1><strong>Café que conecta pessoas</strong></h1>
+                <p class="subtitulo">Mais que café, uma experiência.</p>
+                <a class="botao" href="#produtos">Ver cardápio <span aria-hidden="true">→</span></a>
+            </header>
+
+            <figure class="banner-imagem">
+                <img src="img/banner.jpg" alt="Café servido em uma mesa da SmartCoffee">
+            </figure>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <figure class="sobre-imagem">
+                <img src="img/sobre.jpg" alt="Interior acolhedor da SmartCoffee">
+            </figure>
+
+            <section class="sobre-conteudo">
+                <header>
+                    <p class="texto-destaque">Quem somos</p>
+                    <h2><strong>Sobre nós</strong></h2>
+                </header>
+                <p>A SmartCoffee combina café de qualidade, tecnologia e um ambiente acolhedor.</p>
+                <a class="botao-secundario" href="#ambiente">Saiba mais</a>
+            </section>
+        </section>
+
+        <section class="produtos" id="produtos">
+            <header class="titulo-secao">
+                <p class="texto-destaque">Nossos Produtos</p>
+                <h2><strong>Nossos Cafés</strong></h2>
+            </header>
+
+            <ul class="lista-cafes">
+                <li>
+                    <article class="card-cafe">
+                        <img src="img/cafe1.jpg" alt="Cappuccino tradicional">
+                        <section class="card-conteudo">
+                            <h3>Cappuccino Tradicional</h3>
+                            <p>Equilíbrio entre sabor e cremosidade.</p>
+                            <p class="preco">R$ 14,90</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="card-cafe">
+                        <img src="img/cafe2.jpg" alt="Latte caramelo">
+                        <section class="card-conteudo">
+                            <h3>Latte Caramelo</h3>
+                            <p>Leve, doce e irresistível.</p>
+                            <p class="preco">R$ 16,90</p>
+                        </section>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="card-cafe">
+                        <img src="img/cafe3.jpg" alt="Espresso especial">
+                        <section class="card-conteudo">
+                            <h3>Espresso Especial</h3>
+                            <p>Intenso como boas conversas.</p>
+                            <p class="preco">R$ 12,90</p>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="ambiente" id="ambiente">
+            <section class="ambiente-conteudo">
+                <p class="texto-destaque">Nosso ambiente</p>
+                <h2>Um espaço para boas ideias</h2>
+                <p>Ambiente moderno, acolhedor e pensado para trabalhar, estudar ou apenas relaxar.</p>
+                <a class="botao" href="#contato">Conheça o espaço</a>
+            </section>
+
+            <figure class="ambiente-imagem">
+                <img src="img/ambiente.jpg" alt="Espaço interno da cafeteria SmartCoffee">
+            </figure>
+        </section>
+
+        <section class="contato" id="contato">
+            <section class="contato-conteudo">
+                <p class="texto-destaque">Contato</p>
+                <h2>Fale com a gente</h2>
+                <p>Tem dúvidas, sugestões ou quer fazer um evento? Envie uma mensagem.</p>
+            </section>
+
+            <form class="formulario" action="#" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+
+                <button class="botao-enviar" type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="logo" href="#inicio">Smart<span class="destaque">Coffee</span></a>
+        <nav aria-label="Navegação do rodapé">
+            <ul class="menu-rodape">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#ambiente">Ambiente</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
