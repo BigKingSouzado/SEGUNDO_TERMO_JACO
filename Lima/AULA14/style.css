@@ -1,0 +1,141 @@
+    /* SEMPRE QUE FOR TRABALHAR COM IMAGEM É O GRID */
+
+/* AQUI AS ALTERAÇÕES VÃO SER EM TUDO NO HTML */
+body {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.inicio {
+    /* background-color: aqua; */
+    /* FAZER COM DUAS CORES, COMO UM DEGRADE */
+    background-image: linear-gradient(135deg,#4f6e54, #06bb6d);
+    display: flex;
+    /* SEVER PARA FAZER UMA BORDA */
+    /* border-radius: 100px; */
+    /* SERVE PARA FAZER A ALTERAÇÃO NA BORDA COMO TAMANHO E COR */
+    /* border: 2px solid #4f46e5; */
+    /* AQUI É PARA ALTERAR A ALTURA DO FLEX-BOX */
+    height: 160px;
+    /* AQUI É PARA ALINHAR OS ITENS TA LINHA */
+    align-items: center;
+    /* AQUI É PARA ONDE IRA SER COLOCADO O TEXTO, NO MEIO COMEÇO E FINAL */
+    justify-content: flex-end;
+}
+
+
+.inicio span {
+    color: chartreuse;
+    /* AQUI É PARA COLOCAR UMA FONT DE ESCRITA  */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+
+.inicio a {
+    /* ESSE CODIGO SERVE PARA TIRAR O RISQUINHO EM BAIXO 
+    E ELE TAMBEM SERVE PARA TIRAR AS BOLINHAS DA LISTA/LI E ETC*/
+    text-decoration: none; 
+    display: flex;
+    list-style: none;
+}
+
+.navegacao {
+    display: flex;
+    /* flex-direction: row; -- quebra linhas */
+    /* flex-direction: row; -- deixa em linhas */
+    text-decoration: none;
+    list-style: none;
+    gap: 48px;
+    margin: 0 20px 30px;
+    padding: 0px 20% 30px;
+    /* align-items: flex-start; */
+    align-items: center;
+    justify-content: flex-end;
+    /* align-content: flex-start; -- aliamento */
+}
+
+.conteudo-inicial {
+    background-color: aquamarine;
+    display: flex;
+}
+
+.conteudo-art {
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;   
+}
+
+img {
+    display: block;
+    width: 30%;
+}
+
+.cartao-img:hover {
+    /* AQUI FAZ UM CONTORNO */
+    box-shadow: 0 10px 24px -8px rgb(0, 74, 248);
+    background: rdba(255,255,255,0.25);
+    backdrop-filter: blur(14px);
+    transform: translateX(120px) rotate(10deg);
+}
+
+.galeria-conteudo {
+    background-color: #5effb9;
+    padding: 0;
+    margin: 0;
+}
+
+.galeria-img {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px;
+    grid-column: auto;
+}
+
+.galeria-img img{
+    display: block;
+    max-width: 100%;
+    height: 50%;
+}
+
+.galeria-img , ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.gal-img {
+    background-size: contain;
+    /* position: relative; */
+    overflow: hidden;
+    border-radius: 14px;
+    width: 280%;
+}
+
+.gal-img figcaption {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 14px;
+    color: white;
+    background: black;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gal-img:hover figcaption {
+    transform: translateY(0);
+}
+
+.img-ultimo {
+    width: 200px;
+    height: 120px;
+    object-position: center;
+    object-fit: contain;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+}

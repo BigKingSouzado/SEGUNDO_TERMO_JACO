@@ -1,0 +1,52 @@
+.equipe1 {
+    display: flex;  
+    /* gap: 30px; */
+    /* padding: 30px */
+}
+
+.equipe2 {
+    display: flex;  
+    gap: 30px;
+    padding: 30px
+}
+
+.equipe {
+    display: flex;  
+    gap: 30px;
+    padding: 30px;
+    /* justify-content: flex-end;    ELE FAZ O TEXTO DIGITADO IR LÁ PARA TRÁS */
+    /* justify-content: flex-start;  ELE FAZ O TEXTO DIGITADO IR LÁ PARA FRENTE */
+    /* justify-content: center;  ELE FAZ O TEXTO DIGITADO IR NO MEIO */
+    /* justify-content: space-between;  ELE DIVIDE CADA LINHA ENTRE | COMEÇO | MEIO | FIM | */
+    /* justify-content: space-evenly; ELE DIVIDE CADA LINHA ENTRE | COMEÇO | MEIO | FIM | SÓ QUE ELE DEIXA JUNTO  */
+}
+
+.area {
+    display: flex;
+}
+
+.area1 {
+    display: flex;
+    height: 10px;
+    align-items: flex-start;
+}
+
+.area2 {
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.area3 {
+    display: flex;
+    height: 100px;
+    align-items: flex-end;
+}
+
+
+/* ELE ESTÁ DANDO ERRO POIS TEM QUE TIRAR O ARTICLE POIS ELE NÃO É AI */
+.cards { 
+    display: flex;  
+    gap: 30px;
+    padding: 30px
+}
